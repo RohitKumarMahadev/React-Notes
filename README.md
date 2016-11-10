@@ -10,7 +10,7 @@ In order to understand where does the complexity lies in modern Javascript apps,
 
 Let's time travel backwards to 2008 apprx.
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/TraditionalWebApp.png "TraditionalWebApp")
+![alt text](./Assets/TraditionalWebApp.png "TraditionalWebApp")
 
 1. The database sends data to your back-end (e.g. your Java or PHP app).
 2. The back-end reads that data and outputs HTML.
@@ -19,7 +19,7 @@ Let's time travel backwards to 2008 apprx.
 
 Back to the present, a typical "modern" 2016 web app also known as Single Page App looks like this
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/ModernWebApp.png "ModernWebApp")
+![alt text](./Assets/ModernWebApp.png "ModernWebApp")
 
 1. Instead of sending HTML, the server now sends data along with code(Optional server side rendering for faster loading)
 2. The client can swap in content instantly without having to ever refresh the browser window (thus the term “Single Page App”).
@@ -49,17 +49,17 @@ Imagine the spec says,
 
 **1. Tweet button is disabled if text area is empty.**
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/jquery-style-Example.png "jQuery Style")
+![alt text](./Assets/jquery-style-Example.png "jQuery Style")
 **2. If the "Add Photo" button is ON, the number of available characters decreases by 23.**
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/jquery-style-2.png "jQuery getting messy slowly")
+![alt text](./Assets/jquery-style-2.png "jQuery getting messy slowly")
 **3. Add an alert box with overflow characters highlighted in red, if 160 character limit is reached.**
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/jquery-style-3.png "OMG!!")
+![alt text](./Assets/jquery-style-3.png "OMG!!")
 
 So on and so forth, you finally end up in mess like this
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/jQuery-style-final.png "OMG!!")
+![alt text](./Assets/jQuery-style-final.png "OMG!!")
 It is because several event handlers are modifying serveral parts of the DOM and the code gets ugly. In theory, we can mitigiate this problem by refactoring it into reusable functions, but no matter how effictively coded, one who touches the DOM, mess always sticks! 
 
 By the way, do you know DOM manipulation degrades your app performance by threefold?
@@ -126,7 +126,7 @@ Let's say we want to update the counter label every time user clicks a button. H
 3. The counter increments by 1 (you call setState to make this happen)
 4. React re-renders the component in response to the state change
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/StateInReact.png "State in React!!")
+![alt text](./Assets/StateInReact.png "State in React!!")
 
 In the above example, no where we are touching DOM for state change. 
 >So, how does React know that state has changed? Is it continually polling for changes? Watching for events, like Angular does? Nope. Nothing that fancy.
@@ -139,17 +139,17 @@ Ok. Let's go back to twitter box specs which we did tried to solve using jQuery 
 
 1. **Tweet button is disabled if text area is empty**
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/react-style-1.png "React style - 1!!")
+![alt text](./Assets/react-style-1.png "React style - 1!!")
 2. **If the "Add Photo" button is ON, the number of available characters decreases by 23**
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/react-style-2.png "React style - 2!!")
+![alt text](./Assets/react-style-2.png "React style - 2!!")
 3. **Add an alert box with overflow characters highlighted in red, if 160 character limit is reached.**
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/react-style-3.png "React style - 3!!")
+![alt text](./Assets/react-style-3.png "React style - 3!!")
 
 So on and so forth, you end up in uniderctional flow like this compared to jQuery spaghetti code
 
-![alt text](/Users/Rohit/Documents/ReactPresentation/Assets/jquery-style-vs-react-style.png "Jquery Vs React style!!")
+![alt text](./Assets/jquery-style-vs-react-style.png "Jquery Vs React style!!")
 
 This idea of unidirectional data flow using state in React saves our lives from complexity when app grows big and bigger.
 

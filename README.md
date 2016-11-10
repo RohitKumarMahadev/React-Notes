@@ -50,9 +50,11 @@ Imagine the spec says,
 **1. Tweet button is disabled if text area is empty.**
 
 ![alt text](./Assets/jquery-style-Example.png "jQuery Style")
+
 **2. If the "Add Photo" button is ON, the number of available characters decreases by 23.**
 
 ![alt text](./Assets/jquery-style-2.png "jQuery getting messy slowly")
+
 **3. Add an alert box with overflow characters highlighted in red, if 160 character limit is reached.**
 
 ![alt text](./Assets/jquery-style-3.png "OMG!!")
@@ -60,6 +62,7 @@ Imagine the spec says,
 So on and so forth, you finally end up in mess like this
 
 ![alt text](./Assets/jQuery-style-final.png "OMG!!")
+
 It is because several event handlers are modifying serveral parts of the DOM and the code gets ugly. In theory, we can mitigiate this problem by refactoring it into reusable functions, but no matter how effictively coded, one who touches the DOM, mess always sticks! 
 
 By the way, do you know DOM manipulation degrades your app performance by threefold?
@@ -140,9 +143,11 @@ Ok. Let's go back to twitter box specs which we did tried to solve using jQuery 
 1. **Tweet button is disabled if text area is empty**
 
 ![alt text](./Assets/react-style-1.png "React style - 1!!")
+
 2. **If the "Add Photo" button is ON, the number of available characters decreases by 23**
 
 ![alt text](./Assets/react-style-2.png "React style - 2!!")
+
 3. **Add an alert box with overflow characters highlighted in red, if 160 character limit is reached.**
 
 ![alt text](./Assets/react-style-3.png "React style - 3!!")

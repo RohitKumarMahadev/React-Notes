@@ -13,11 +13,16 @@ Tired yet? In short, that’s what **JavaScript fatigue** is.
 
 You know what? We are suffering with *paradox of choice*. Let's put all the bells and whistles aside.
 
-We just know JavaScript and we love it. We wan't to stand on the shoulder of this giant to solve the state management problem, the root cause of all this evil, which has been pushed from backend to frontend, no matter which framework comes and go. 
+We just know JavaScript and we love it. We wan't to stand on the shoulder of this giant to solve the state management problem, the root cause of all this evil, which has been pushed from backend to frontend, no matter which framework comes and go.
+
 1. As JavaScript tackles bigger and more complex problems, We want a higher level of abstraction without much variance from the language itself.
+
 2. We don't want to carry away with the drift of technologies, language syntax and semantics, unnecessary services and controllers which may not be needed in our app.
+
 3. We want something that is easy to reason about and don't want any auto-*magic* to happen under the hood within a framework/library.
+
 4. In simple, we want a view layer that *just* takes care of "data to HTML".
+
 
 Having said this, **React** from Facebook exactly solves this problem.
 

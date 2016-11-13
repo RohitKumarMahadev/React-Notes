@@ -13,10 +13,15 @@ Simply put, if you’d like your app to do anything – if you want interactivit
 **Example**
 
 Let's say we want to update the counter label every time user clicks a button. Here is how it works step by step
+
 1. There’s a number displayed, starting off at 0
+
 2. You click a button (this causes a call to a handleClick function )
+
 3. The counter increments by 1 (you call setState to make this happen)
+
 4. React re-renders the component in response to the state change
+
 
 ![alt text](./Assets/StateInReact.png "State in React!!")
 
@@ -47,7 +52,11 @@ So on and so forth, you end up in uniderctional flow like this compared to jQuer
 
 This idea of unidirectional data flow using state in React saves our lives from complexity when app grows big and bigger.
 
-Simple but elegant! But how different React is from other front-end frameworks?
+As per [ThoughtWorks](https://www.thoughtworks.com/radar/languages-and-frameworks),
+> In the avalanche of front-end JavaScript frameworks, React.js stands out due to its design around a reactive data flow. Allowing only one-way data binding greatly simplifies the rendering logic and avoids many of the issues that commonly plague applications written with other frameworks. We're seeing the benefits of React.js on a growing number of projects, large and small, while at the same time we continue to be concerned about the state and the future of other popular frameworks like AngularJS. This has led to React.js becoming our default choice for JavaScript frameworks.
+
+
+Simple and elegant! But how different React is from other front-end frameworks?
 
 
 
